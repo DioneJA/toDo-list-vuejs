@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import barramento from '../bus'
+import bus from '../../bus'
 export default {
   data(){
     return{
@@ -17,7 +17,7 @@ export default {
   methods:{
     adicionarToDo(){
       if(this.name!=""){
-        barramento.adicionarToDo(this.name)
+        bus.adicionarToDo(this.name)
         this.name = ""
       }
 

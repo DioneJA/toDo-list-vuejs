@@ -11,7 +11,7 @@
 export default {
     props:{
         toDo:Array,
-        index: 0
+        index: Number
     },
     methods:{
         setCompleted(){

@@ -21,10 +21,10 @@
 </template>
 
 <script>
-import StatusBar from './components/status-bar.vue'
-import inputToDo from './components/input-to-do.vue'
-import toDo from './components/to-do.vue'
-import listToDo from './components/list-of-to-do.vue'
+import StatusBar from './components/StatusBar.vue'
+import inputToDo from './components/todo/TodoInput.vue'
+import toDo from './components/todo/TodoCard.vue'
+import listToDo from './components/todo/TodoList.vue'
 export default {
   components: { StatusBar,inputToDo,toDo,listToDo},
   data(){

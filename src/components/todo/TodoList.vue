@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import barramento from '../bus'
+import bus from '../../bus'
 export default {
     props:{
         toDo: {type: Array, required:true}
@@ -19,7 +19,7 @@ export default {
         }
     },
     created(){
-        barramento.adicionouToDo(name=>{
+        bus.adicionouToDo(name=>{
             this.adicionarNaLista(name)
         })
     }
